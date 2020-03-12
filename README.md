@@ -21,3 +21,18 @@
 (NIL (4 3 2)) 
 
 ((-2 -2 -2) NIL)
+
+
+(setq lst '(( 2 3) (-3 -4)))
+
+;(print (cons (cons 1 (car lst)) (cdr lst)))
+;(print (list(car lst) (cons 1 (cadr lst))))
+(defun split (lst)
+    (cond 
+        ((null lst) nil)
+        (t (lambda (first restl)( (> (first ) 0) 
+             (cons (cons (car lst) (car (split (cdr lst)))) (cdr (split (cdr lst)))))
+        (t 
+             (list(car (split (cdr lst))) (cons (car lst) (cadr (split (cdr lst))))))
+        ))
+(print (split '(2 3 4 -2 -1)))
