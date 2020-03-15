@@ -109,3 +109,26 @@ A(1) B(1 2)
 (delete-first-occurrence '(1 2 3 (1 2 3 ) 1 2 3) 2)
     (1 3 (1 2 3) 1 2 3)
 ```
+
+25. Определите функцию, удаляющую из списка каждый четный элемен
+
+```lisp
+(defun delete-even-number (x )
+    (cond
+        ((null x)nil)
+        ((eq (rem (car x) 2) 0) (delete-even-number (cdr x)))
+        (t (cons (car x) (delete-even-number (cdr x))))
+    )
+)
+```
+Пример
+
+```lisp
+(delete-even-number '(1 2 3 4 5 6 7 8 9 10))
+    (1 3 5 7 9) 
+    
+(delete-even-number '(2 2 2 )))
+    NIL 
+
+(delete-even-number '(1 1 1  )))
+    (1 1 1)
