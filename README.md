@@ -36,3 +36,20 @@
              (list(car (split (cdr lst))) (cons (car lst) (cadr (split (cdr lst))))))
         ))
 (print (split '(2 3 4 -2 -1)))
+
+```lisp
+(defun delete-similar (lst)
+    (cond
+        ((null lst) nil)
+        (t  (cons (car lst) (delete-similar (checker (cdr lst) (car lst))))) 
+    )
+)
+
+(defun checker (lst a)
+    (cond 
+        ((null lst) nil)
+        ((/= a (car lst)) (cons (car lst) (checker (cdr lst) a)))
+        ((= a (car lst)) (checker (cdr lst) a))
+    )
+)
+```
