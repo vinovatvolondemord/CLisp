@@ -102,7 +102,7 @@ A(1) B(1 2)
 ```
 Пример
 
-```
+```lisp
 (delete-first-occurrence '(1 2 3 () 1 2 3) 2)
     (1 3 NIL 1 2 3)
     
