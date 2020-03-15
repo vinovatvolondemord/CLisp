@@ -56,4 +56,30 @@
 15. Определите функцию, вычисляющую скалярное произведение векторов, за-данных списками целых чисел
 
 ```lisp
+(defun scalar (a b) 
+    (
+        (lambda (ha ta hb tb)
+            (cond
+                ((OR (null ha) (null hb)) nil)
+                ((OR (atom ta) (atom tb)) (* ha hb))
+                (t (+ (* ha hb) (scalar ta tb)))
+            )
+        )(car a) (cdr a) (car b) (cdr b)
+    )
+)
 ```
+ Пример
+ 
+ ```lisp
+A(1 2 4) B(1 2 4)
+    21
+  
+A(1) B(2)
+    2
+
+A() B(2 3 1)
+    NIL
+
+A(1) B(1 2)
+    1
+ ```
