@@ -132,3 +132,29 @@ A(1) B(1 2)
 
 (delete-even-number '(1 1 1  )))
     (1 1 1)
+```
+
+28. Определите функцию, вычисляющую, сколько всего атомов в списке (списоч-ной структуре).
+
+```lisp
+(defun atom-cnt (lst) 
+    (cond
+        ((null lst) 0)
+        ((eq nil (car lst)) (atom-cnt (cdr lst)))
+        ((atom (car lst)) (+ 1 (atom-cnt (cdr lst))))
+        (t (+(atom-cnt(cdr lst)) (atom-cnt (car lst))))
+    )
+)
+```
+Пример
+
+```lisp
+(atom-cnt '(1 2 3 (1 2 3 (1 2 3)) 1 2 (1)))
+    11
+    
+(atom-cnt '())
+    0
+
+(atom-cnt '(1 () (1)))
+    2
+```
