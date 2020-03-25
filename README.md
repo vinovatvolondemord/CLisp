@@ -66,30 +66,32 @@
         )(car a) (cdr a) (car b) (cdr b)
     )
 )
-
+(print (scalar '(1 23 3) '(2 3)))
+(print (scalar '(1 2) '(2 1)))
+(print (scalar '() '(1)))
 
  ```
  # 21. Определите функцию, удаляющую из списка первое вхождение данного элемента на верхнем уровне.
  ```lisp
  
 (defun delete-first-occurrence (lst a)
-    (cond 
-        ((null lst) nil)
-        ((eq nil (car lst))(delete-first-occurrence (cdr lst) a))
-        ((atom (car lst)) 
-            (cond
-                ((/= a (car lst)) (cons (car lst) (delete-first-occurrence (cdr lst) a)))
-                ((= a (car lst)) (cdr lst))
-            )
-        )
-        (t (delete-first-occurrence (cdr lst) a))
-    )
+   (cond 
+       ((null lst) nil)
+       ((eq nil (car lst))(delete-first-occurrence (cdr lst) a))
+       ((atom (car lst)) 
+           (cond
+               ((/= a (car lst)) (cons (car lst) (delete-first-occurrence (cdr lst) a)))
+               ((= a (car lst)) (cdr lst))
+           )
+       )
+       (t (delete-first-occurrence (cdr lst) a))
+   )
 )
 
-(delete-first-occurrence '(1 2 3 () 1 2 3) 2)
- ;   (1 3 NIL 1 2 3)
-    
-(delete-first-occurrence '(1 2 3 (1 2 3 ) 1 2 3) 2)
+(print (delete-first-occurrence '(1 2 3 () 1 2 3) 2))
+;   (1 3 NIL 1 2 3)
+   
+(print (delete-first-occurrence '(1 2 3 (1 2 3 ) 1 2 3) 2))
 ;    (1 3 (1 2 3) 1 2 3)
 ```
 
@@ -104,13 +106,13 @@
     )
 )
 
-(delete-even-number '(1 2 3 4 5 6 7 8 9 10))
+(print (delete-even-number '(1 2 3 4 5 6 7 8 9 10)))
 ;    (1 3 5 7 9) 
     
-(delete-even-number '(2 2 2 )))
+(print (delete-even-number '(2 2 2 )))
   ;  NIL 
 
-(delete-even-number '(1 1 1  )))
+(print (delete-even-number '(1 1 1  )))
   ;  (1 1 1)
 ```
 
@@ -126,31 +128,32 @@
     )
 )
 
-(atom-cnt '(1 2 3 (1 2 3 (1 2 3)) 1 2 (1)))
-;    11
+(print (atom-cnt '(1 2 3 (1 2 3 (1 2 3)) 1 2 (1))))
+;    12
     
-(atom-cnt '())
+(print (atom-cnt '()))
 ;    0
 
-(atom-cnt '(1 () (1)))
+(print (atom-cnt '(1 () (1))))
 ;    2
 ```
 # 32. Определите предикат МНОЖЕСТВО-Р, который проверяет, является ли список множеством, т.е. входит ли каждый элемент в список лишь один раз
 
 ```lisp
-(defun Предикат-Р (x)
+(defun МНОЖЕСТВО-Р (x)
     (cond
         ((null x) t)
         ((member (car x) (cdr x)) nil)
-        (t (Предикат-Р (cdr x)))
+        (t (МНОЖЕСТВО-Р (cdr x)))
     )
 )
 
-(Предикат-Р '(1 2 11 111 1))
+(print (МНОЖЕСТВО-Р '(1 2 11 111 1)))
 ;    NIL
 
-(Предикат-Р '(1 2 11 111 ))
+(print (МНОЖЕСТВО-Р '(1 2 11 111 )))
    ; T
+
 
 ```
 
@@ -166,20 +169,13 @@
 )
 
 (print (biggest-tree-node '(1 (3 (5)(1000000)) (100 (24444) (44444)))))
-
+(print (biggest-tree-node '(1 (3 (5)(1)) (100 (24444) (44444)))))
+(print (biggest-tree-node '(1 (3 (5)(1)) (100 (24444) (1)))))
+(print (biggest-tree-node '(1 (3 (5)(1)) (100 (1) (1)))))
+(print (biggest-tree-node '(1 (3 (5)(1)) (1 (1) (1)))))
         
 ;He готово
 ;Пока что находит максимум из элементов всего дерева
-
-
- 
-```
-
-
-Пример
-
-```lisp
-
 
 ```
 
