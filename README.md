@@ -25,19 +25,23 @@
 ; 13. Определите функцию, удаляющую в исходном списке все повторные вхожде-ния элементов.
 
 (defun delete-similar (lst)
-    (cond
-        ((null lst) nil)
-        (t  (cons (car lst) (delete-similar (checker (cdr lst) (car lst))))) 
-    )
+    ((lambda (a b)
+         (cond
+            ((null lst) nil)
+            (t  (cons a (delete-similar (checker b a)))) 
+        )
+    )(car lst)(cdr lst))
 )
 
 (defun checker (lst a)
-    (cond 
-        ((null lst) nil)
-        ((eq a (car lst)) (checker (cdr lst) a))
-        (t (cons (car lst) (checker (cdr lst) a)))
-        
-    )
+     ((lambda (c b) 
+        (cond 
+            ((null lst) nil)
+            ((eq a c) (checker b a))
+            (t (cons c (checker b a)))
+
+        )
+    )(car lst)(cdr lst))
 )
 
 ;-----------------------------------------------------------------------
