@@ -127,12 +127,14 @@
 
 
 (defun atom-cnt (lst) 
-    (cond
-        ((null lst) 0)
-        ((eq nil (car lst)) (atom-cnt (cdr lst)))
-        ((atom (car lst)) (+ 1 (atom-cnt (cdr lst))))
-        (t (+(atom-cnt(cdr lst)) (atom-cnt (car lst))))
-    )
+    ((lambda (a b)
+        (cond
+            ((null lst) 0)
+            ((eq nil a) (atom-cnt b))
+            ((atom a) (+ 1 (atom-cnt b)))
+            (t (+(atom-cnt b) (atom-cnt a)))
+        )
+     )(car lst)(cdr lst))
 )
 
 
