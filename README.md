@@ -106,11 +106,13 @@
 ; 25. Определите функцию, удаляющую из списка каждый четный элемен
 
 (defun delete-even-number (x )
-    (cond
-        ((null x)nil)
-        ((eq (rem (car x) 2) 0) (delete-even-number (cdr x)))
-        (t (cons (car x) (delete-even-number (cdr x))))
-    )
+    ((lambda (a b)
+        (cond
+            ((null x)nil)
+            ((eq (rem a 2) 0) (delete-even-number b))
+            (t (cons a (delete-even-number b)))
+        )
+     )(car x)(cdr x))
 )
 
 
