@@ -1,17 +1,8 @@
-+ [1.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#8-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D1%8F-%D1%80%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%82-%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B9-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%B8%D0%B7-%D1%86%D0%B5%D0%BB%D1%8B%D1%85-%D1%87%D0%B8%D1%81%D0%B5%D0%BB-%D0%BD%D0%B0%D0%B4%D0%B2%D0%B0-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%87%D0%B8%D1%81%D0%B5%D0%BB-%D0%B8-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BE%D1%82%D1%80%D0%B8%D1%86%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85-%D1%87%D0%B8%D1%81%D0%B5%D0%BB)
-+ [2.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#13-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-%D1%83%D0%B4%D0%B0%D0%BB%D1%8F%D1%8E%D1%89%D1%83%D1%8E-%D0%B2-%D0%B8%D1%81%D1%85%D0%BE%D0%B4%D0%BD%D0%BE%D0%BC-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B5-%D0%B2%D1%81%D0%B5-%D0%BF%D0%BE%D0%B2%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B5-%D0%B2%D1%85%D0%BE%D0%B6%D0%B4%D0%B5-%D0%BD%D0%B8%D1%8F-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%B2)
-+ [3.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#15-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D1%8F%D1%8E%D1%89%D1%83%D1%8E-%D1%81%D0%BA%D0%B0%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D0%B5-%D0%BF%D1%80%D0%BE%D0%B8%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2%D0%B5%D0%BA%D1%82%D0%BE%D1%80%D0%BE%D0%B2-%D0%B7%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%D0%BC%D0%B8-%D1%86%D0%B5%D0%BB%D1%8B%D1%85-%D1%87%D0%B8%D1%81%D0%B5%D0%BB)
-+ [4.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#21-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-%D1%83%D0%B4%D0%B0%D0%BB%D1%8F%D1%8E%D1%89%D1%83%D1%8E-%D0%B8%D0%B7-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%B5-%D0%B2%D1%85%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B4%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0-%D0%BD%D0%B0-%D0%B2%D0%B5%D1%80%D1%85%D0%BD%D0%B5%D0%BC-%D1%83%D1%80%D0%BE%D0%B2%D0%BD%D0%B5)
-+ [5.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#25-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-%D1%83%D0%B4%D0%B0%D0%BB%D1%8F%D1%8E%D1%89%D1%83%D1%8E-%D0%B8%D0%B7-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-%D0%BA%D0%B0%D0%B6%D0%B4%D1%8B%D0%B9-%D1%87%D0%B5%D1%82%D0%BD%D1%8B%D0%B9-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD)
-+ [6.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#28-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D1%8F%D1%8E%D1%89%D1%83%D1%8E-%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE-%D0%B2%D1%81%D0%B5%D0%B3%D0%BE-%D0%B0%D1%82%D0%BE%D0%BC%D0%BE%D0%B2-%D0%B2-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B5-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D1%87%D0%BD%D0%BE%D0%B9-%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B5)
-+ [7.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#32-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5-%D0%BF%D1%80%D0%B5%D0%B4%D0%B8%D0%BA%D0%B0%D1%82-%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%BE-%D1%80-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%BF%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D1%8F%D0%B5%D1%82-%D1%8F%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F-%D0%BB%D0%B8-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%BE%D0%BC-%D1%82%D0%B5-%D0%B2%D1%85%D0%BE%D0%B4%D0%B8%D1%82-%D0%BB%D0%B8-%D0%BA%D0%B0%D0%B6%D0%B4%D1%8B%D0%B9-%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82-%D0%B2-%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA-%D0%BB%D0%B8%D1%88%D1%8C-%D0%BE%D0%B4%D0%B8%D0%BD-%D1%80%D0%B0%D0%B7)
-+ [8.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#42-%D0%BE%D0%BF%D1%80%D0%B5%D0%B4%D0%B5%D0%BB%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E-%D0%BD%D0%B0%D1%85%D0%BE%D0%B4%D1%8F%D1%89%D1%83%D1%8E-%D0%BC%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B5-%D0%B8%D0%B7-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B9-%D0%BD%D0%B0%D1%85%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D1%85%D1%81%D1%8F-%D0%B2%D0%B2%D0%B5%D1%80%D1%88%D0%B8%D0%BD%D0%B0%D1%85-%D0%B4%D0%B5%D1%80%D0%B5%D0%B2a)
-+ [9.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#45-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B8%D0%BC-%D1%87%D1%82%D0%BE-%D1%83-%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%B5%D1%81%D1%82%D1%8C-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0-%D1%85-%D0%B8-%D1%83-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B5-%D1%81%D0%BE%D0%B4%D0%B5%D1%80%D0%B6%D0%B0%D1%82-%D0%BA%D0%BE%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%82%D1%8B-%D0%BC%D0%B5%D1%81%D1%82%D0%B0-%D0%BD%D0%B0%D1%85%D0%BE%D0%B6%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0-%D0%BE%D1%82%D0%BD%D0%BE%D1%81%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE-%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE-%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D0%B0-%D0%BA%D0%BE%D0%BE%D1%80%D0%B4%D0%B8%D0%BD%D0%B0%D1%82%D0%BD%D0%B0%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E%D1%80%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-a-b-%D0%B2%D1%8B%D1%87%D0%B8%D1%81%D0%BB%D1%8F%D1%8E%D1%89%D1%83%D1%8E-%D1%80%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5-%D0%BC%D0%B5%D0%B6%D0%B4%D1%83-%D0%B3%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D0%BC%D0%B8-%D0%B0-%D0%B8-b)
-+ [10.Задача](https://github.com/vinovatvolondemord/CLisp/blob/master/README.md#46-%D0%BF%D1%80%D0%B5%D0%B4%D0%BF%D0%BE%D0%BB%D0%BE%D0%B6%D0%B8%D0%BC-%D1%87%D1%82%D0%BE-%D0%BE%D1%82%D0%B5%D1%86-%D0%B8-%D0%BC%D0%B0%D1%82%D1%8C-%D0%BD%D0%B5%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B3%D0%BE-%D0%BB%D0%B8%D1%86%D0%B0-%D1%85%D1%80%D0%B0%D0%BD%D1%8F%D1%82%D1%81%D1%8F-%D0%BA%D0%B0%D0%BA-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%81%D0%BE%D0%BE%D1%82%D0%B2%D0%B5%D1%82%D1%81%D1%82%D0%B2%D1%83%D1%8E%D1%89%D0%B8%D1%85-%D1%81%D0%B2%D0%BE%D0%B9%D1%81%D1%82%D0%B2-%D1%83-%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D0%B0-%D0%BE%D0%B1%D0%BE%D0%B7%D0%BD%D0%B0%D1%87%D0%B0%D1%8E%D1%89%D0%B5%D0%B3%D0%BE-%D1%8D%D1%82%D0%BE-%D0%BB%D0%B8%D1%86%D0%BE-%D0%BD%D0%B0%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8E%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B8-x-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%B0%D1%8F-%D0%B2%D0%BE%D0%B7%D0%B2%D1%80%D0%B0%D1%89%D0%B0%D0%B5%D1%82-%D0%B2-%D0%BA%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D1%8F-%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%B9-%D0%B8-%D0%BF%D1%80%D0%B5%D0%B4%D0%B8%D0%BA%D0%B0%D1%82%D1%81%D0%B5%D1%81%D1%82%D1%80%D1%8B-%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%8F-x1-x2-%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9-%D0%B8%D1%81%D1%82%D0%B8%D0%BD%D0%B5%D0%BD-%D0%B2-%D1%81%D0%BB%D1%83%D1%87%D0%B0%D0%B5-%D0%B5%D1%81%D0%BB%D0%B8-x1-%D0%B8-x2-%D1%81%D0%B5%D1%81%D1%82%D1%80%D1%8B-%D0%B8%D0%BB%D0%B8-%D0%B1%D1%80%D0%B0%D1%82%D1%8C%D1%8F-%D1%80%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5-%D0%B8%D0%BB%D0%B8-%D1%81-%D0%BE%D0%B4%D0%BD%D0%B8%D0%BC-%D0%BE%D0%B1%D1%89%D0%B8%D0%BC-%D1%80%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC)
-
-# 8. Определите функцию, которая разделит исходный список из целых чисел надва списка: список положительных чисел и список отрицательных чисел.
 
 ```lisp
+# 8. Определите функцию, которая разделит исходный список из целых чисел надва списка: список положительных чисел и список отрицательных чисел.
+
+
 (defun split (lst)
     ((lambda (first restl)
         (cond 
@@ -26,10 +17,10 @@
 (print (split '(-2 2 3 4 -2 -1)))
 (print (split '(-2 -2 -1)))
 
-```
 
-# 13. Определите функцию, удаляющую в исходном списке все повторные вхожде-ния элементов.
-```lisp
+
+ 13. Определите функцию, удаляющую в исходном списке все повторные вхожде-ния элементов.
+
 (defun delete-similar (lst)
     (cond
         ((null lst) nil)
@@ -50,11 +41,10 @@
 (print (delete-similar '(1 2 2 3 5 1 4 5 1)))
 (print (delete-similar '(1 1 1 1 1 1  1)))
 
-```
+
 
 # 15. Определите функцию, вычисляющую скалярное произведение векторов, за-данных списками целых чисел
 
-```lisp
 (defun scalar (a b) 
     (
         (lambda (ha ta hb tb)
@@ -70,9 +60,9 @@
 (print (scalar '(1 2) '(2 1)))
 (print (scalar '() '(1)))
 
- ```
+
  # 21. Определите функцию, удаляющую из списка первое вхождение данного элемента на верхнем уровне.
- ```lisp
+
  
 (defun delete-first-occurrence (lst a)
    (cond 
@@ -89,15 +79,14 @@
 )
 
 (print (delete-first-occurrence '(1 2 3 () 1 2 3) 2))
-;   (1 3 NIL 1 2 3)
+
    
 (print (delete-first-occurrence '(1 2 3 (1 2 3 ) 1 2 3) 2))
-;    (1 3 (1 2 3) 1 2 3)
-```
+
+
 
 # 25. Определите функцию, удаляющую из списка каждый четный элемен
 
-```lisp
 (defun delete-even-number (x )
     (cond
         ((null x)nil)
@@ -107,18 +96,17 @@
 )
 
 (print (delete-even-number '(1 2 3 4 5 6 7 8 9 10)))
-;    (1 3 5 7 9) 
+
     
 (print (delete-even-number '(2 2 2 )))
-  ;  NIL 
+
 
 (print (delete-even-number '(1 1 1  )))
-  ;  (1 1 1)
-```
+
 
 # 28. Определите функцию, вычисляющую, сколько всего атомов в списке (списочной структуре).
 
-```lisp
+
 (defun atom-cnt (lst) 
     (cond
         ((null lst) 0)
@@ -129,17 +117,17 @@
 )
 
 (print (atom-cnt '(1 2 3 (1 2 3 (1 2 3)) 1 2 (1))))
-;    12
+
     
 (print (atom-cnt '()))
-;    0
+
 
 (print (atom-cnt '(1 () (1))))
-;    2
-```
+
+
 # 32. Определите предикат МНОЖЕСТВО-Р, который проверяет, является ли список множеством, т.е. входит ли каждый элемент в список лишь один раз
 
-```lisp
+
 (defun МНОЖЕСТВО-Р (x)
     (cond
         ((null x) t)
@@ -155,11 +143,10 @@
    ; T
 
 
-```
 
 # 42. Определите функцию, находящую максимальное из значений, находящихся в 1вершинах деревa.
 
-```lisp
+
 (defun biggest-tree-node (tree)
     (cond
         ((null tree) 0)
@@ -177,11 +164,11 @@
 ;He готово
 ;Пока что находит максимум из элементов всего дерева
 
-```
+
 
 # 45. Предположим, что у имени города есть свойства х и у, которые содержат координаты места нахождения города относительно некоторого начала координат.Напишите функцию(РАССТОЯНИЕ a b), вычисляющую расстояние между городами а и b.
 
-```lisp
+
 (defun range-bitween-cities (first second)
     ((lambda (xfs yfs)
         (cond
