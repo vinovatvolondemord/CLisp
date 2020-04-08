@@ -79,18 +79,21 @@
 
  
 (defun delete-first-occurrence (lst a)
-   (cond 
-       ((null lst) nil)
-       ((eq nil (car lst))(delete-first-occurrence (cdr lst) a))
-       ((atom (car lst)) 
-           (cond
-               ((/= a (car lst)) (cons (car lst) (delete-first-occurrence (cdr lst) a)))
-               ((= a (car lst)) (cdr lst))
+   ((lambda (b c)
+        (cond 
+           ((null lst) nil)
+           ((eq nil b)(delete-first-occurrence c a))
+           ((atom b) 
+               (cond
+                   ((/= a b) (cons b (delete-first-occurrence c a)))
+                   ((= a b) c)
+               )
            )
+           (t (delete-first-occurrence (cdr lst) a))
        )
-       (t (delete-first-occurrence (cdr lst) a))
-   )
+    )(car lst)(cdr lst))
 )
+
 
 
 ;-----------------------------------------------------------------------
