@@ -5,14 +5,17 @@
 
 
 (defun split (lst)
-    ((lambda (first restl)
-        (cond 
-            ((null lst) nil)
-            ( (> first 0) (cons (cons first (car (split restl))) (cdr (split restl))))
-            (t (list (car (split restl)) (cons first (cadr (split restl)))))
-        )
-    )(car lst)(cdr lst)
-))
+    (cond 
+        ((null lst) nil)
+        (T
+         ((lambda (first restl crestl)
+          (cond
+           ( (> first 0) (cons (cons first crestl) (cdr restl)))
+           (t (list crestl (cons first (cadr restl))))
+          )
+         )(car lst)(split(cdr lst))(car (split(cdr lst)))))
+    )
+)
 
 ;-----------------------------------------------------------------------
 
@@ -34,14 +37,14 @@
 )
 
 (defun checker (lst a)
-     ((lambda (c b) 
-        (cond 
-            ((null lst) nil)
-            ((eq a c) (checker b a))
-            (t (cons c (checker b a)))
-
-        )
-    )(car lst)(cdr lst))
+    (cond 
+        ((null lst) nil)
+        (T  ((lambda (c b)
+            (cond
+                ((eq a c) b)
+                (t (cons c b)))
+        )(car lst)(checker (cdr lst) a)))
+    )
 )
 
 ;-----------------------------------------------------------------------
@@ -79,20 +82,21 @@
 
  
 (defun delete-first-occurrence (lst a)
-   ((lambda (b c)
-        (cond 
-           ((null lst) nil)
-           ((eq nil b)(delete-first-occurrence c a))
+    (cond 
+        ((null lst) nil)
+        (T 
+         ((lambda (b c d)
+          (cond
+           ((eq nil b)d)
            ((atom b) 
-               (cond
-                   ((/= a b) (cons b (delete-first-occurrence c a)))
-                   ((= a b) c)
-               )
-           )
-           (t (delete-first-occurrence (cdr lst) a))
-       )
-    )(car lst)(cdr lst))
+            (cond
+             ((/= a b) (cons b d))
+             ((= a b) c)))
+           (t d))
+         )(car lst)(cdr lst)(delete-first-occurrence (cdr lst) a)))
+    )
 )
+
 
 
 
@@ -106,15 +110,16 @@
 ; 25. Определите функцию, удаляющую из списка каждый четный элемен
 
 (defun delete-even-number (x )
-    ((lambda (a b)
-        (cond
-            ((null x)nil)
-            ((eq (rem a 2) 0) (delete-even-number b))
-            (t (cons a (delete-even-number b)))
+    (cond
+        ((null x)nil)
+        (T((lambda (a b)
+           (cond
+            ((eq (rem a 2) 0) b)
+            (t (cons a b))
         )
-     )(car x)(cdr x))
+     )(car x)(delete-even-number(cdr x))))
+    )
 )
-
 
 ;-----------------------------------------------------------------------
 (print '(Задача №25))
@@ -127,14 +132,16 @@
 
 
 (defun atom-cnt (lst) 
-    ((lambda (a b)
-        (cond
-            ((null lst) 0)
-            ((eq nil a) (atom-cnt b))
-            ((atom a) (+ 1 (atom-cnt b)))
-            (t (+(atom-cnt b) (atom-cnt a)))
-        )
-     )(car lst)(cdr lst))
+    (cond
+        ((null lst) 0)
+        (T((lambda (a b)
+         (cond
+          ((eq nil a) b)
+          ((atom a) (+ 1 b))
+          (t (+ b (atom-cnt a)))
+         )
+        )(car lst)(atom-cnt(cdr lst))))
+    )
 )
 
 
@@ -149,13 +156,17 @@
 ;список множеством, т.е. входит ли каждый элемент в список лишь один раз
 
 
+
 (defun МНОЖЕСТВО-Р (x)
-    (cond
-        ((null x) t)
-        ((member (car x) (cdr x)) nil)
-        (t (МНОЖЕСТВО-Р (cdr x)))
-    )
+    ((lambda (a b)
+        (cond
+            ((null x) t)
+            ((member a b) nil)
+            (t (МНОЖЕСТВО-Р b))
+        )
+     )(car x)(cdr x))
 )
+
 
 
 ;-----------------------------------------------------------------------
@@ -173,8 +184,12 @@
 (defun biggest-tree-node (tree)
     (cond
         ((null tree) 0)
-        ((atom (car tree)) (max (car tree) (biggest-tree-node (cdr tree))))
-        ((atom (caar tree)) (max (biggest-tree-node (car tree)) (biggest-tree-node (cdr tree))))
+        (T((lambda (a b)
+           (cond
+                ((atom a) (max (car tree) b))
+                ((atom (caar tree)) (max (biggest-tree-node a) b))
+           )
+       )(car tree) (biggest-tree-node (cdr tree))))
     )
 )
 
